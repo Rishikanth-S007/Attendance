@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Attendance",
+    "slug": "attendance-employee-app",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.yourcompany.attendance",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Attendance to access your camera to verify your identity for check-in and check-out."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Attendance to read your location to confirm you are at the workplace when you check in or out."
+        }
+      ],
+      "expo-secure-store",
+      "expo-status-bar"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.attendance"
+    }
+  }
+}

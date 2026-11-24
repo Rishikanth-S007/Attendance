@@ -1,0 +1,11 @@
+fastapi>=0.111,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.9
+numpy>=1.26,<3
+opencv-python-headless>=4.10,<5
+pydantic>=2.7,<3
+# Real face recognition: dlib's ResNet face encoder (128-d, ~99.4% on LFW).
+# dlib-bin ships prebuilt wheels (no C++ toolchain needed); the model weights
+# are bundled inside face_recognition_models, so nothing is downloaded at runtime.
+dlib-bin>=19.24
+face_recognition_models>=0.3.0
